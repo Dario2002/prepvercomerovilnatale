@@ -1,0 +1,17 @@
+<form>
+<label>Cose Inultili</label>
+  <input type= 'text' name = 'inutile' #new_inutile >
+
+<label>Numero:</label>
+  <input type= 'number' name = 'numero' #new_number >
+
+  <button (click)= "onDrakaris(new_inutile, new_number)">schiaccimami</button>
+
+</form>
+
+
+<ul>
+  <li *ngFor="let frase of articles">
+    <app-frase-comp [frase] = 'frase'></app-frase-comp>
+</li>
+</ul>
