@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { FraseCompComponent } from './frase-comp/frase-comp.component';
 
@@ -10,7 +10,7 @@ import { FraseCompComponent } from './frase-comp/frase-comp.component';
     FraseCompComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

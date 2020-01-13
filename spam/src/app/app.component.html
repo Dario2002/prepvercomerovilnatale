@@ -1,14 +1,16 @@
-<form>
+
+<div class="container">
+  <form class="jumbotron">
 <label>Cose Inultili</label>
-  <input type= 'text' name = 'inutile' #new_inutile >
+  <input type= 'text' name = 'inutile' #new_inutile class="form-control" >
 
 <label>Numero:</label>
-  <input type= 'number' name = 'numero' #new_number >
+  <input type= 'number' name = 'numero' #new_number class="form-control">
 
-  <button (click)= "onDrakaris(new_inutile, new_number)">schiaccimami</button>
+  <button class = "btn btn-warning" (click)= "onDrakaris(new_inutile, new_number)">schiaccimami</button>
 
 </form>
-
+</div>
 
 <ul>
   <li *ngFor="let frase of articles">
